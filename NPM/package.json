@@ -1,0 +1,17 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js "
+  },
+  "keywords": [],
+  "author": "Monir",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "This is simple node js projcet",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
