@@ -1,9 +1,19 @@
 import http from 'http'
 
 const server = http.createServer((req,res)=>{
-    console.log(req.url)
+   const { url} = req
+   console.log(url)
     res.writeHead(200,{'content-type':'text/plain'})
-    res.end("Welcome")
+  
+    if(url === "/"){
+        res.end("welcome our home page")
+    } else if (url === "/about"){
+      res.end ("welcome our about page")
+    } else if (url === "/contact"){
+      res.end ("welcome our contact page")
+    } else{
+        res.end("404 page")
+    }
 })
 
 const port = process.env.PORT || 3000
